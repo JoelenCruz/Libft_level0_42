@@ -19,32 +19,50 @@
 ** considerado como parte da string; portanto, se c é `\0', a função
 ** ções localizam a terminação `\0'.
 */
-
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	int			i;
-	const char	*ini;
+	int	i;
 
-	i = 0;
-	ini = s;
-	while (s[i] != '\0')
-		i++;
-	s = (s + i);
-	while (*s != *ini && c != *s)
-		s--;
-	if (c == *s)
-		return ((char *)s);
-	return (0);
+	i = ft_strlen(str);
+	if (c == '\0')
+		return ((char *)str + i);
+	while (i >= 0)
+	{
+		if (str[i] == c)
+			return ((char *)str + i);
+		i--;
+	}
+	return (NULL);
 }
 
-/*
+
+// C code to demonstrate the working of
+// strrchr()
+
 #include <stdio.h>
-int main()
+#include <string.h>
+
+// Driver function
+int main(int argc, char **argv)
 {
-	const char s[1000] = "JOelencruzdasilva123456";
-	int c = 101;
-	printf("%s",ft_strrchr(s,c));
+    (void)argc;
+    // initializing variables
+    char* val;
+
+    // Use of strrchr()
+    val = strrchr(argv[2], argv[1][0]);
+
+    printf("(strrchr) String after last  %c is : %s \n", argv[1][0], val);
+    
+    val = ft_strrchr(argv[2], argv[1][0]);
+
+    printf("(ft_strrchr) String after last %c is : %s \n", argv[1][0], val);
+
+    // Use of strrchr()
+    // returns null
+    // test for null
+   
+    return (0);
 }
-*/

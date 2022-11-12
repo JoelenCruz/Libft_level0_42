@@ -185,7 +185,7 @@ char		*ft_strrchr(const char *s, int c);
  * @param src Pointer to the source of data to be copied.
  * @return Total length of the String tried to create.
 **/
-size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t		ft_strlcpy(char *dest, const char *src, size_t size);
 
 /**
  * @brief Append to size -1 character from src to the end of dst.

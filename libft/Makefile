@@ -15,7 +15,7 @@ SRCS_B = ./ft_lstnew.c ./ft_lstadd_front.c ./ft_lstsize.c ./ft_lstlast.c ./ft_ls
 OBJS = $(SRCS:.c=.o)
 OBJS_B = $(SRCS_B:.c=.o)
 CC  = cc
-CFLAGC = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 

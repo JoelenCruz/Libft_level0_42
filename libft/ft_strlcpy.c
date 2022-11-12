@@ -31,36 +31,30 @@
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t	srcsize;
+	size_t	len;
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
-	srcsize = ft_strlen(src);
+	len = ft_strlen(src);
 	i = 0;
-	if (dstsize != 0)
+	if (!dest || !src)
+		return (0);
+	if (size == 0)
+		return (len);
+	while (src[i] != '\0' && i < (size - 1))
 	{
-		while (src[i] != '\0' && i < (dstsize - 1))
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
+		dest[i] = src[i];
+		i++;
 	}
-	return (srcsize);
+	dest[i] = '\0';
+	return (len);
 }
-
 /*
-#include <string.h>
-#include <stdio.h>
-
 int main(void)
 {
-	const char src1[10] = "victor";
-	char dest1[50] = "kifer";
-	unsigned int nb = 10;
-	printf("Str: %ld\n", ft_strlcpy(dest1, src1, nb));
-}
-*/
+	char src[] = "Joelen";
+	char dest[10];
+	printf("%ld\n", ft_strlcpy(dest, src, 0));
+	printf("%s\n", dest);
+}*/
