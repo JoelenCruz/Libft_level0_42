@@ -1,2 +1,2 @@
 # libft_42
-First project of 42
+First project 42
