@@ -37,7 +37,7 @@ char	*ft_strrchr(const char *str, int c)
 	return (NULL);
 }
 
-
+/*
 // C code to demonstrate the working of
 // strrchr()
 
@@ -66,3 +66,6 @@ int main(int argc, char **argv)
    
     return (0);
 }
+*/
+
+//Obs: Para compilar com argv chame no terminel: $./out.a "e" "Joelen"
