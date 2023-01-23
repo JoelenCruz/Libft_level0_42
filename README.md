@@ -1,5 +1,5 @@
-# libft
-First project 42. In this project, you will be creating a library of functions.
+# Libft
+First Project 42. In this project, you will create a library with many functionstions.
 
 # My results libft
 ![image](https://user-images.githubusercontent.com/43698585/202721592-3a01023b-cf33-467a-a86a-7a7a4ade7eb9.png)
