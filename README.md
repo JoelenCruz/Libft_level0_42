@@ -2,11 +2,11 @@
 
 ## 1- Clone
 	
-	git clone https://github.com/JoelenCruz/get_next_line_42.git libft_jcruz-da
+	git clone https://github.com/JoelenCruz/libft_42.git libft_jcruz-da
   
 ## 2- Navigate to folder libft_jcruz-da and run make
     
-    cd get_next_line_jcruz-da
+    cd libft_jcruz-da
    	make
 
 ## 3- Objective
