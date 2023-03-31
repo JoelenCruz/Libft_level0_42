@@ -18,3 +18,5 @@ First Project 42. In this project, you will create a library with many functions
 Unit-test --> https://github.com/alelievr/libft-unit-test
 
 War-machine --> https://github.com/0x050f/libft-war-machine
+
+![image](https://github.com/JoelenCruz/libft_42/blob/main/test_libft.gif)
